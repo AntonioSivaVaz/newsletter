@@ -358,13 +358,13 @@ nav ul li a:hover{
     background-color: #012921;
 }
 
-.footer-text{
-    margin-left: 30%;
+ .footer-text{
+    margin-right: 20px;
     color: aliceblue;
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-}
+} 
 
 .footer-text a{
     font-size: 1.4rem;
@@ -372,6 +372,7 @@ nav ul li a:hover{
     text-decoration-style: none;
     color: white;
 }
+
 
 .description-footer{
     color: aliceblue;
@@ -627,10 +628,6 @@ u{
     .col-3{
         width: 500px;
     }
-
-    .footer-text{
-        margin-left: 20%;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -712,10 +709,6 @@ u{
 
     .scienceIcon{
         display: none;
-    }
-
-    .footer-text{
-        margin-left: 12%;
     }
 }
 
@@ -809,10 +802,15 @@ u{
 
     #about{
         height: max-content;
+        padding-bottom: 5%;
     }
 
     .background-img{
-        height: 90vh;
+        height: 100%;
+    }
+
+    #pricing{
+        background-color: white;
     }
 
     .pricing-description{
@@ -831,9 +829,7 @@ u{
     }
 
     .footer-text{
-        width: 100%;
         font-size: 15px;
-        margin: auto;
     }
 
     .footer-text a{

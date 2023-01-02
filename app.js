@@ -9,10 +9,10 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}))
 
 client.setConfig({
-  apiKey: "d44265239a8ba5b9207e579533d9e48f-us8",
-  server: "us8",
+  apiKey: "MAILCHIMP API KEY",
+  server: "LAST 3 DIGITS API KEY",
 });
-let listID = "c404a3b406";
+let listID = "LIST ID OF MEMBERS";
 
 function createOrResubscribeMember(firstName, lastName, email, emailHash, res){
 
