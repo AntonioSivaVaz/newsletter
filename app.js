@@ -9,10 +9,16 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}))
 
 client.setConfig({
-  apiKey: "MAILCHIMP API KEY",
-  server: "LAST 3 DIGITS API KEY",
+  apiKey: "a063396a43ddbb9d3aa544cbbf0fee09-us8",
+  server: "us8",
 });
-let listID = "LIST ID OF MEMBERS";
+let listID = "c404a3b406";
+
+//client.setConfig({
+//   apiKey: "a063396a43ddbb9d3aa544cbbf0fee09-us8",
+//   server: "us8",
+// });
+// let listID = "c404a3b406"; 
 
 function createOrResubscribeMember(firstName, lastName, email, emailHash, res){
 
@@ -124,6 +130,6 @@ app.post("/cancel_user", function(req, res){
     unsubscribeSupossedMember(emailToCancel, emailHash, res);
 })
 
-app.listen(3000, function(req, res){
-    console.log('Running on port 3000');
+app.listen(process.env.PORT ||3000, function(req, res){
+  console.log('Running on port 3000');
 })
